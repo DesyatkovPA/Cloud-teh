@@ -1,11 +1,14 @@
-<BottomNavigation
-  showLabels
-  value={value}
-  onChange={(event, newValue) => {
-    setValue(newValue);
-  }}
->
-  <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-  <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-  <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-</BottomNavigation>
+
+
+export default function Footer(){
+  return(
+  <footer
+  style={{
+    height: "5vh",
+    background: "#9b1b1b" }}>
+
+    ПОДВАЛ
+    
+  </footer>
+  )
+}
