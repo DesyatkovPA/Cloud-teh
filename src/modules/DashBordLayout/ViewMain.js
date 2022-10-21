@@ -1,10 +1,18 @@
-import { Container } from "@mui/material";
+import * as ReactDOM from "react-dom/client";
+import * as React from 'react';
+import { StyledEngineProvider } from '@mui/material/styles';
+import Header from '../components/Header/AppBar.js';
+import Main from '../components/Main/ImageList.js';
+import Footer from '../components/Footer/BottomNav.js';
 
+const app = document.querySelector("#app");
 
-//const Container = styled.div
-
-export function DashBoardLayout(){
-    return <div>
-
-    </div>
-}
+ReactDOM.createRoot(document.querySelector("#app")).render(
+<React.StrictMode>
+    <StyledEngineProvider injectFirst>
+        <Header />
+        <Main />
+        <Footer />
+    </StyledEngineProvider>
+</React.StrictMode>
+);
